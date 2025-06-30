@@ -33,7 +33,7 @@ void ExtractModal::Start() {
         if (i != 0 || m_num_of_lines != 1) {
             ClearScreen();
             std::cout << OVERSCAN_Y_LINES << OVERSCAN_X_SPACES << "Wii Fit Password Retriever - (c) 2025 Noah Pistilli";
-            PrintTopBar("Pick an option");
+            PrintTopBar("Pick a user");
 
             int printable = MIN(25 - OVERSCAN_Y_TIMES_2, m_num_of_lines);
             for (int j = m_offset; j < (m_offset + printable); j++) {
